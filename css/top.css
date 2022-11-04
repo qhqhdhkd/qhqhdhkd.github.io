@@ -1,0 +1,112 @@
+.top{
+    width: 960px;
+    height: 210px;
+    position: relative;
+    margin-bottom: 10px;
+    /* background-color: salmon; 지울 부분 */
+}
+.top .logo{
+    top: 60px;
+    left: 380px;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    
+    font-family: 'Hahmlet', serif;
+    font-size: 3.0rem;
+    text-align: center;
+    /* background-color: seashell; 지울 부분 */
+}
+
+/* 로그인 회원가입 */
+.top_nav{
+    top: 5px;
+    right: 10px;
+    position: absolute;
+    /* background-color: palevioletred; 지울 부분 */
+}
+.top_nav>a{ 
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 5px;
+    /* background-color: palegoldenrod; 지울 부분 */
+}
+.top_nav>a:hover{
+    color: royalblue;
+}
+
+/* 메인메뉴 */
+.main_menu{
+    width: 960px;
+    height: 30px;
+    bottom: 30px;
+    position: absolute;
+    margin-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+.main_menu>a{
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 550;
+    font-size: 1.1rem;
+    color: gray;
+    /* background-color: lightcyan; 지울 부분 */
+    margin-left: 73px;
+    margin-right: 73px;
+}
+
+/* 검색 */
+.search{
+    width: 150px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    bottom: 0px;
+    right: 48px;
+    position: absolute;
+}
+.search_btn{ /* 검색 버튼*/
+    width: 35px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    bottom: 0px;
+    right: 30px;
+    position: absolute;
+    border-radius: 5px;
+    border: 1px solid rgb(103, 103, 103);
+    background-color: whitesmoke;
+}
+.search_btn:active{
+    border: 1px solid rgb(103, 103, 103);
+    background-color: lightgray;
+    
+}
+
+/* footer */
+footer{
+    width: 960px;
+    height: 50px;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    font-weight: 500;
+    position: relative;
+    /* background-color: pink; */
+}
+.sitename{
+    position: absolute;
+    top: 2px;
+    left: 0px;
+}
+.member_count{
+    position: absolute;
+    top: 2px;
+    right: 0px;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리끼리 :: 자유게시판</title>
+     <!-- 외부 스타일 링크 -->
+     <link href="./css/basic.css" rel="stylesheet" />
+     <link href="./css/top.css" rel="stylesheet" />
+     <!-- 외부 폰트 -->
+     <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet"> <!-- 전체 -->
+     <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap" rel="stylesheet"> <!-- 로고 폰트 -->
+     <!-- 스타일 -->
+     <style>
+        .main_menu>.freeboard{
+            color: black;
+        }
+        .write_btn{ /* 글쓰기 버튼*/
+            width: 40px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            bottom: 0px;
+            left: 30px;
+            position: absolute;
+            border-radius: 5px;
+            border: 1px solid rgb(103, 103, 103);
+            background-color: whitesmoke;
+        }
+        .write_btn:active{
+            border: 1px solid rgb(103, 103, 103);
+            background-color: lightgray;
+            
+        }
+
+        /* content */
+        .content{
+            width: 960px;
+        }
+        table{
+            width: 900px;
+            margin: 0px auto;
+            /* background-color: palegoldenrod; */
+        }
+        tr{
+            height: 30px;
+            line-height: 30px;
+        }
+        td{
+            border-bottom: 1px solid black;
+        }
+        .title{
+            text-align: center;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background-color: rgb(169, 213, 252);
+        }
+        .list{
+            text-align: center;
+        }
+     </style>
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <!-- logo -->
+        <a href="./index.html"><h1 class="logo">우리끼리</h1></a>
+        <!-- 로그인 회원가입 -->
+        <div class="top_nav">
+            <a href="./login.html" target="_blank">로그인</a>
+            <a href="./member.html" target="_blank">회원가입</a>
+        </div>
+        <!-- 메인메뉴 -->
+        <div class="main_menu">
+            <a href="./notice.html" class="notice">공지사항</a>
+            <a href="./schedule.html" class="schedule">모임일정</a>
+            <a href="./photo.html" class="photo">사진앨범</a>
+            <a href="./freeboard.html" class="freeboard">자유게시판</a>
+        </div>
+        <!-- 검색 -->
+        <form action="" name="search" class="search_part">
+            <input type="text" class="search" placeholder="검색">
+            <input type="button" class="search_btn" value="검색">
+        </form>
+        <!-- 글쓰기 -->
+        <form action="" name="write" class="write_part">
+            <input type="button" class="write_btn" value="글쓰기">
+        </form>
+    </div> <!-- top 끝 -->
+
+    <!-- content -->
+    <div class="content">
+        <table>
+            <tr> <!-- 타이틀 -->
+                <td class="title">말머리</td>
+                <td class="title">제목</td>
+                <td class="title">작성자</td>
+                <td class="title">작성일</td>
+                <td class="title">조회</td>
+                <td class="title">좋아요</td>
+            </tr>
+            <tr> <!-- 1 -->
+                <td class="list">유머</td>
+                <td class="list">웃긴사진 ㅋㅋ</td>
+                <td class="list">이00</td>
+                <td class="list">2022.10.29</td>
+                <td class="list">12</td>
+                <td class="list">1</td>
+            </tr>
+            <tr> <!-- 2 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 3 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 4 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 5 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 6 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 7 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 8 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 9 -->
+                <td class="lsit"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+            <tr> <!-- 10 -->
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+                <td class="list"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p class="sitename">우리끼리 동창모임</p>
+        <p class="member_count">현재 가입인원 : 6명</p>
+    </footer>
+</body>
+</html>

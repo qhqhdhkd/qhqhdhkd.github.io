@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리끼리 :: 사진앨범</title>
+    <!-- 외부 스타일 링크 -->
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="./css/top.css" rel="stylesheet" />
+    <!-- 외부 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet"> <!-- 전체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap" rel="stylesheet"> <!-- 로고 폰트 -->
+    <!-- 스타일 -->
+    <style>
+    .main_menu>.photo{
+        color: black;
+    }
+    .content{
+        width: 960px;
+        font-size: 0px;
+    }
+    img{
+        display: block;
+        width: 210px;
+        height: 280px;
+    }
+    .content>a{
+        display: inline-block;
+        font-size: 1rem;
+        text-align: center;
+        width: 210px;
+        height: 310px;
+        margin-left: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* background-color: bisque; 지울 부분 */
+    }
+
+    </style>
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <!-- logo -->
+        <a href="./index.html"><h1 class="logo">우리끼리</h1></a>
+        <!-- 로그인 회원가입 -->
+        <div class="top_nav">
+            <a href="./login.html" target="_blank">로그인</a>
+            <a href="./member.html" target="_blank">회원가입</a>
+        </div>
+        <!-- 메인메뉴 -->
+        <div class="main_menu">
+            <a href="./notice.html" class="notice">공지사항</a>
+            <a href="./schedule.html" class="schedule">모임일정</a>
+            <a href="./photo.html" class="photo">사진앨범</a>
+            <a href="./freeboard.html" class="freeboard">자유게시판</a>
+        </div>
+        <!-- 검색 -->
+        <form action="" name="search" class="search_part">
+            <input type="text" class="search" placeholder="검색">
+            <input type="button" class="search_btn" value="검색">
+        </form>
+    </div> <!-- top 끝 -->
+
+    <!-- content -->
+    <div class="content">
+        <a href="#"><img src="./images/IMG_5833.jpeg">2022년 7월 in 서울</a>
+        <a href="#"><img src="./images/IMG_7317.jpeg">2022년 6월 in 삼척</a>
+        <a href="#"><img src="./images/IMG_5864.jpeg">2022년 2월 in 서울</a>
+        <a href="#"><img src="./images/IMG_7572.jpeg">2021년 12월 in 서울</a>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <p class="sitename">우리끼리 동창모임</p>
+        <p class="member_count">현재 가입인원 : 6명</p>
+    </footer>
+
+</body>
+</html>

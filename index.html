@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리끼리</title>
+    <!-- 외부 스타일 링크 -->
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="./css/top.css" rel="stylesheet" />
+    <!-- 외부 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet"> <!-- 전체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap" rel="stylesheet"> <!-- 로고 폰트 -->
+    <!-- 스타일 -->
+    <style>
+      .main_menu>a{
+        color: black;
+      }
+      .main_menu>a:hover{
+        color: royalblue;
+      }
+
+      /* content */
+      .content{
+        width: 960px;
+        overflow: hidden;
+      }
+      /* left */
+      .left{
+        width: 390px;
+        height: 400px; /* 수정할 부분 */
+        float: left;
+        margin-right: 20px;
+        /* background-color: green; 지울 부분 */
+      }
+      .left_notice{
+        width: 370px;
+        height: 170px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+      .left_board{
+        width: 370px;
+        height: 170px;
+        margin-left: 20px;
+      }
+      .left ul{
+        height: 140px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        background-color: aliceblue;
+      }
+      
+
+
+      /* right */
+      .right{
+        width: 550px;
+        height: 400px; /* 수정할 부분 */
+        float: left;
+        /* background-color: orange; 지울 부분 */
+        position: relative;
+      }
+      .right>a{
+        display: inline-block;
+        width: 255px;
+        height: 340px;
+      }
+      .right img{
+        width: 255px;
+        height: 340px;
+      }
+      .recentphoto1{
+        left: 0px;
+        top: 30px;
+        position: absolute;
+      }
+      .recentphoto2{
+        right: 20px;
+        top: 30px;
+        position: absolute;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top">
+        <!-- logo -->
+        <a href="./index.html"><h1 class="logo">우리끼리</h1></a>
+        <!-- 로그인 회원가입 -->
+        <div class="top_nav">
+            <a href="./login.html" target="_blank">로그인</a>
+            <a href="./member.html" target="_blank">회원가입</a>
+        </div>
+        <!-- 메인메뉴 -->
+        <div class="main_menu">
+            <a href="./notice.html" class="notice">공지사항</a>
+            <a href="./schedule.html" class="schedule">모임일정</a>
+            <a href="./photo.html" class="photo">사진앨범</a>
+            <a href="./freeboard.html" class="freeboard">자유게시판</a>
+        </div>
+        <!-- 검색 -->
+        <form action="" name="search" class="search_part">
+            <input type="text" class="search" placeholder="검색">
+            <input type="button" class="search_btn" value="검색">
+        </form>
+    </div> <!-- top 끝 -->
+
+    <div class="content">
+        <!-- left -->
+        <div class="left">
+            <!-- 최근 공지사항 -->
+            <div class="left_notice">
+                <h3>최근 공지사항</h3>
+                <ul>
+                    <a href="./notice.html"><li>[공지] 2022년 연말모임 회비 입금</li></a>
+                    <a href="./notice.html"><li>[공지] 2022년 연말모임 일정 조율</li></a>
+                    <a href="./notice.html"><li>[완료] 2022년 여름휴가 계획</li></a>
+                </ul>
+            </div>
+            
+            <!-- 최근 게시글 -->
+            <div class="left_board">
+                <h3>최근 게시글</h3>
+                <ul>
+                    <a href="./freeboard.html"><li>[유머] 웃긴사진 ㅋㅋ</li></a>
+                </ul>
+            </div>
+        </div> <!-- left 끝 -->
+        
+        <!-- right -->
+        <div class="right">
+            <h3>최근 사진</h3>
+            <a href="./photo.html" target="_blank"><img src="./images/IMG_5833.jpeg"  class="recentphoto1"></a>
+            <a href="./photo.html" target="_blank"><img src="./images/IMG_7317.jpeg" class="recentphoto2"></a>
+        </div> <!-- right 끝 -->
+    </div> <!-- content 끝 -->
+
+    <!-- footer -->
+    <footer>
+      <p class="sitename">우리끼리 동창모임</p>
+      <p class="member_count">현재 가입인원 : 6명</p>
+    </footer>
+    </body>
+</html>

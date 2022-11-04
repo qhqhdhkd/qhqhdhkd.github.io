@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리끼리 :: 로그인</title>
+    <!-- 외부 스타일 링크 -->
+    <link href=".css/basic.css" rel="stylesheet" />
+    <!-- 외부 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet"> <!-- 전체 -->
+    <!-- 스타일 -->
+    <style>
+      .login{
+        width: 400px;
+        height: 250px;
+        position: relative;
+        border-radius: 50px;
+        margin: 10px auto;
+        padding: 8px;
+        background-color: aliceblue;
+      }
+      h2{
+        width: 80px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        margin: 10px auto;
+
+        /* background-color: royalblue; 지울 부분 */
+      }
+      
+      input{
+        display: block;
+        width: 300px;
+        height: 40px;
+        font-size: 1.2rem;
+        padding-left: 5px;
+        margin: 5px auto;
+      }
+      .member{
+        width: 60px;
+        height: 22px;
+        left: 50px;
+        position: absolute;
+        /* background-color: blueviolet; */
+      }
+      .find{
+        width: 145px;
+        height: 22px;
+        right: 50px;
+        position: absolute;
+        /* background-color: olive; */
+      }
+
+      #login_btn{
+        border-radius: 5px;
+        border: 1px solid rgb(103, 103, 103);
+        background-color: rgb(169, 213, 252);
+      }
+      #login_btn:active{
+            border: 1px solid rgb(103, 103, 103);
+            background-color: rgb(145, 201, 250);
+        }
+
+    </style>
+</head>
+<body>
+  <div class="login">
+    <h2>로그인</h2>
+    <input type="text" name="user_id" id="user_id" placeholder="아이디" required>
+    <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호" required>
+    <input type="button" id="login_btn" value="로그인">
+    <a href="./member.html" class="member">회원가입</a>
+    <a href="#" class="find">아이디•비밀번호찾기</a>
+  </div>
+</body>
+</html>

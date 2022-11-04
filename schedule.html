@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리끼리 :: 모임일정</title>
+    <!-- 외부 스타일 링크 -->
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="./css/top.css" rel="stylesheet" />
+    <!-- 외부 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet"> <!-- 전체 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap" rel="stylesheet"> <!-- 로고 폰트 -->
+    <!-- 스타일 -->
+    <style>
+        .main_menu>.schedule{
+            color: black;
+        }
+        .content{
+            width: 960px;
+            margin-bottom: 43px;
+            /* background-color: antiquewhite; 지울 부분 */
+            position: relative;
+            overflow: hidden;
+        }
+        .title{
+            width: 900px;
+            height: 70px;
+            line-height: 70px;
+            margin: 0px auto;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 550;
+            border: 1px dotted gray;
+            /* background-color: pink; 지울 부분 */
+        }
+        .month{ /* 월 행 */
+            width: 900px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0px auto;
+            margin-bottom: 25px;
+            font-size: 0px;
+            border-left: 1px dotted gray;
+            border-right: 1px dotted gray;
+            border-bottom: 1px dotted gray;
+        }
+        .month>a{ /* n월 */
+            display: inline-block;
+            font-size: 1rem;
+            width: 75px;
+            text-align: center;
+            /* background-color: antiquewhite; 지울 부분 */
+        }
+
+        /* 달력 */
+        .content_left{
+            float: left;
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+        .cal_month{ /* 달력 타이틀 */
+            width: 184px;
+            text-align: center;
+
+            /* background-color: red; 지울 부분 */
+        }
+        .calendar td{
+            width: 24px;
+            height: 24px;
+            text-align: center;
+        }
+        .calendar .dday{ /* 일정이 있는 날 달력에 색 넣기 */
+            background-color: yellow;
+        }
+
+        /* 상세 일정 */
+        .content_right{
+            width: 681px;
+            right: 30px;
+            position: absolute;
+            /* background-color: powderblue;  지울 부분 */
+        }
+        .content_right>h4{ /* 상세일정 타이틀 */
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 5px;
+            background-color: rgb(169, 213, 252);
+            border-radius: 15px;
+        }
+        .detail{
+            right: 0px;
+            position: absolute;
+        }
+        .detail td{ /* 상세 일정 표 */
+            width: 340px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .detail_title>td{ /* 날짜 일정 */
+            background-color: rgb(169, 213, 252);
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            font-weight: 550;
+        }
+        .detail td:first-child{
+            border-right: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <!-- logo -->
+        <a href="./index.html"><h1 class="logo">우리끼리</h1></a>
+        <!-- 로그인 회원가입 -->
+        <div class="top_nav">
+            <a href="./login.html" target="_blank">로그인</a>
+            <a href="./member.html" target="_blank">회원가입</a>
+        </div>
+        <!-- 메인메뉴 -->
+        <div class="main_menu">
+            <a href="./notice.html" class="notice">공지사항</a>
+            <a href="./schedule.html" class="schedule">모임일정</a>
+            <a href="./photo.html" class="photo">사진앨범</a>
+            <a href="./freeboard.html" class="freeboard">자유게시판</a>
+        </div>
+    </div> <!-- top 끝 -->
+
+    <!-- content -->
+    <div class="content">
+        <h2 class="title">2022년 모임일정</h2>
+        <div class="month">
+            <a href="#">1월</a>
+            <a href="#">2월</a>
+            <a href="#">3월</a>
+            <a href="#">4월</a>
+            <a href="#">5월</a>
+            <a href="#">6월</a>
+            <a href="#">7월</a>
+            <a href="#">8월</a>
+            <a href="#">9월</a>
+            <a href="#">10월</a>
+            <a href="#">11월</a>
+            <a href="#">12월</a>
+        </div>
+
+        <!-- 달력 -->
+        <div class="content_left">
+            <h2 class="cal_month">12월</h2>
+            <table class="calendar" border="1">
+                <tr>
+                    <td>일</td></span><td>월</td><td>화</td><td>수</td><td>목</td><td>금</td><td>토</td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td class="dday">10</td>
+                </tr>
+                <tr>
+                    <td class="dday">11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+                </tr>
+                <tr>
+                    <td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+                </tr>
+                <tr>
+                    <td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <!-- 상세 일정 -->
+        <div class="content_right">
+
+            <h4>상세일정</h4>
+            <table class="detail">
+                <tr class="detail_title">
+                    <td>날짜</td>
+                    <td>일정</td>
+                </tr> 
+                <tr>
+                    <td>2022-12-10(토)~2022-12-11(일)</td>
+                    <td>연말모임(경주)</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p class="sitename">우리끼리 동창모임</p>
+        <p class="member_count">현재 가입인원 : 6명</p>
+    </footer>
+</body>
+</html>

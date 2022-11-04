@@ -1,0 +1,31 @@
+    /* 초기화 */
+    *{ margin: 0px; padding: 0px;}
+    body{ /* body 너비와 정렬 */
+        font-family: 'Hahmlet', serif;
+        width: 960px;
+        margin: 0px auto;  /* 가운데 정렬 */
+    }
+    a{ /* 하이퍼링크 스타일*/
+        text-decoration:none;
+        color :black;   /* #000000,  #000, rgb(0,0,0) */
+    }
+    a:visited{ /* 하이퍼링크 방문 후 스타일*/
+        text-decoration:none;
+        color :black;   /* #000000,  #000, rgb(0,0,0) */
+    }
+    ul{
+        margin: 0px; 
+        padding: 0px;
+    }
+    li{
+        list-style: none;
+    }
+    img{
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    table{
+        border-collapse: 0px;
+        border-spacing: 0px;
+    }

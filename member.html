@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>우리끼리 :: 회원가입</title>
+    <!-- 외부 스타일 링크 -->
+    <link href=".css/basic.css" rel="stylesheet" />
+    <!-- 외부 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet"> <!-- 전체 -->
+    <!-- 스타일 -->
+    <style>
+      .member{
+        width: 400px;
+        border-radius: 50px;
+        margin: 10px auto;
+        padding: 8px;
+        background-color: aliceblue;
+      }
+      h2{ /* 회원가입 */
+        width: 120px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        margin: 10px auto;
+
+        /* background-color: royalblue; 지울 부분 */
+      }
+      h4{
+        margin-left: 50px;
+      }
+      input{
+        width: 296px;
+        height: 30px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      #submit{
+        display: block;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 550;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        border: 1px solid rgb(103, 103, 103);
+        background-color: rgb(169, 213, 252);
+      }
+      
+      #submit:active{
+            border: 1px solid rgb(103, 103, 103);
+            background-color: rgb(145, 201, 250);
+        }
+    
+    </style>
+</head>
+<body>
+<form action="" name="member" class="member">
+    <h2>회원가입</h2>
+    <h4>이름</h4>
+    <input type="text" name="name" required/>
+    <h4>아이디</h4>
+    <input type="text" name="id" required/>
+    <h4>비밀번호</h4>
+    <input type="password" name="password" placeholder="문자, 숫자를 조합하여 8자 이상을 사용하세요." required/>
+    <h4>비밀번호확인</h4>
+    <input type="password" name="password" placeholder="한번 더 입력하세요." required/>
+    <h4>휴대전화</h4>
+    <input type="text" name="phone" placeholder="010-XXXX-XXXX" required/>
+    <h4>이메일</h4>
+    <input type="email" name="email" required/>
+
+    <!-- 가입하기 버튼-->
+    <input type="submit" name="submit" id="submit" value="가입하기"/>
+
+</form>
+</body>
+</html>
